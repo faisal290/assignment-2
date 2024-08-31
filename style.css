@@ -8,19 +8,29 @@
   .display-flex{
     display: flex;
   }
+.bg-body{
+    background-color: black;
+}
+  .background{
+    background-color: black;
+  }
 .container
 {
     width: 92%;
     margin: auto;
-    height: 100%;
+    max-width: 1400px;
+    height: 715px;
+    margin: auto;
+    padding: 20px;
    
 }
 .name{
     color: rgba(230, 83, 60, 1);
     font-style: italic;
+    font-size: 36px;
 }
 header{
-    background-color: black;
+   
     color: aliceblue;
 }
 .navbar{
@@ -44,21 +54,144 @@ header{
     margin: 4px 2px;
     border-radius:46px ;
 }
-
-
-
-
-
-
-
-@media  screen and  (max-width:567px){
-
-    .nav-item{
-        display: none;
-    }
+.bg-color{
+    background-color: black;
 }
 
 
 
 
 
+
+
+/* banner styles */
+
+.itlic{
+    font-style:italic ;
+    color:coral;
+}
+.banner{
+    display: flex;
+    height:715px ;
+    width: 1440px;
+
+}
+.banner {
+    position: relative;
+   
+    padding: 50px 0;
+}
+.btn-1{
+    color: white;
+    text-decoration: none;
+    background-color: coral;
+    padding: 10px 40px ;
+   border: black;
+    border-radius:42px ;
+}
+.btn-2{
+    color: white;
+    text-decoration: none;
+    background-color:transparent;
+    padding: 10px 40px ;
+   border:2px solid ;
+    border-radius:20px ;
+}
+.img-profile-pic{
+height:300px ;
+width:250px ;
+
+margin-left:550px ;
+margin-bottom: -80px;
+   
+}
+
+
+
+
+.banner .card-top-right, .banner .card-bottom-left {
+    position: absolute;
+    width: 150px;
+    height: 90px;
+    background-color: rgba(196, 190, 185, 0.8);
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 7px;
+    text-align: center;
+}
+.card-top-right {
+    top: 20px;
+    right: 20px;
+    margin-left: -540px;
+    margin-right: -50px;;
+}
+.card-bottom-left {
+    bottom: 20px;
+    left: 20px;
+    margin-left: 950px;
+    margin-right: +550px;
+ margin-bottom: +400px;
+}
+
+
+/* main */
+.bg-color{
+ max-width: 1140px;
+ margin: 0 auto;
+}
+.section-title{
+    text-align: center;
+    font-size: 3rem;
+}
+.section-description{
+    text-align: center;
+}
+.skills-cointainer{
+    display: flex;
+    justify-content: center;
+   padding: 130px 150px;
+}
+.image{
+   
+    width: 200px;
+    height: 200px;
+    margin: auto 30px;
+    border-radius: 50%;
+    
+}
+.skill-title{
+    text-align: center;
+}
+.skill-description{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media  screen and  (max-width:567px  ){
+
+    .nav-item{
+        display: none;
+    }
+}
+@media screen and (min-width: 595px) and (max-width: 992px) {
+    .banner{
+        flex-direction: column;
+        
+    }
+   
+
+    }
+ @media only screen and (max-width: 768;) {
+    .img-container{
+        order: 1;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+ }
