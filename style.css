@@ -139,6 +139,7 @@ margin-bottom: -80px;
 .bg-color{
  max-width: 1140px;
  margin: 0 auto;
+ margin-top: -90;
 }
 .section-title{
     text-align: center;
@@ -167,8 +168,48 @@ margin-bottom: -80px;
     text-align: center;
 }
 
+/* run section */
+.run{
+    background-color: rgb(44, 41, 41);
+    position: relative;
+   border-radius: 5px;
+    padding: 20px auto;
+    
+    
+}
+.card-content{
+padding: 70px 50px;
+margin-top: -55px;
 
+}
+.h1{
+    font-size:4rem ;
+}
+p{
+    font: bolder;
+}
+.btn-3{
+    
+        color: white;
+        text-decoration: none;
+        background-color: coral;
+        padding: 30px 60px ;
+       border: black;
+        border-radius:42px ;
+        font-size:20px ;
+    }
 
+.run-img{
+    width: 276px;
+height: 320px;
+border-radius: 18px;
+
+margin-left:550px ;
+margin-top: -350px;
+margin-right: -96px;
+margin-bottom: px;
+   
+}
 
 
 
@@ -190,8 +231,6 @@ margin-bottom: -80px;
     }
  @media only screen and (max-width: 768;) {
     .img-container{
-        order: 1;
-        width: 100%;
-        margin-bottom: 20px;
+       flex-direction: column;
     }
  }
