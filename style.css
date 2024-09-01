@@ -32,6 +32,7 @@
 header{
    
     color: aliceblue;
+    display: flex;
 }
 .navbar{
     justify-content: space-between;
@@ -149,9 +150,10 @@ margin-bottom: -80px;
     text-align: center;
 }
 .skills-cointainer{
-    display: flex;
+    display: grid;
     justify-content: center;
    padding: 130px 150px;
+   grid-template-columns: repeat(6,2fr );
 }
 .image{
    
@@ -211,26 +213,62 @@ margin-bottom: px;
    
 }
 
+/* grid */
+ 
+.img-container-2 {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(12, 12, 12);
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.trainer {
+    text-align: center;
+}
+
+.trainer-img {
+    width: 326px;
+    height: auto;
+    max-width: 600px;
+}
+
+.h1class {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
 
 @media  screen and  (max-width:567px  ){
-
+.background{
+    flex-direction: column;
+}
     .nav-item{
         display: none;
     }
-}
-@media screen and (min-width: 595px) and (max-width: 992px) {
-    .banner{
-        flex-direction: column;
+    .img-container-2{
+        grid-template-columns:repeat(1, 1fr);
         
     }
-   
-
-    }
- @media only screen and (max-width: 768;) {
     .img-container{
-       flex-direction: column;
+        display: block;
     }
- }
+   .skills-cointainer{
+    grid-template-columns: repeat(1,1fr);
+   }
+.header{
+    flex-direction: column;
+}
+    }
